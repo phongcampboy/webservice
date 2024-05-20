@@ -17,7 +17,7 @@ class CustomerModel
 
             global $branchDb;
 
-            $select = "a.MemberID, a.FirstName, a.LastName, a.StreetNo, a.Moo, a.Mooban, a.Soi, a.Street, a.Kwaeng,";
+            $select = "a.MemberID, a.FirstName, a.LastName, a.StreetNo, a.Moo, a.Mooban, a.Soi, a.Street, a.Kwaeng,a.Note,";
             $select .= " a.Kaet, a.Province, a.ZipCode, a.Tel1, a.DescriptionRate, a.Fax1, b.InvoiceID, b.InvoiceNo, b.LastPay, b.NextPay, b.Total, b.BillingCode, b.IsPay";
 
             $db = $branchDb[$post['branch']];
