@@ -2402,7 +2402,7 @@ final class Base extends Prefab implements ArrayAccess {
 			$this->reroute('/');
 		if (ini_get('auto_globals_jit'))
 			// Override setting
-			$GLOBALS+=['_ENV'=>$_ENV,'_REQUEST'=>$_REQUEST];
+			$GLOBALS[$name]+=['_ENV'=>$_ENV,'_REQUEST'=>$_REQUEST];
 		// Sync PHP globals with corresponding hive keys
 		$this->init=$this->hive;
 		foreach (explode('|',self::GLOBALS) as $global) {
